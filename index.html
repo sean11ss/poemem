@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https://images.unsplash.com https://i.imgur.com; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; report-uri /csp-report;">
+    <title>Sarah Mitchell - Author</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css?v=123456">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Sarah Mitchell</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#books" class="nav-link">Books</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#quotes" class="nav-link">Quotes</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Sarah Mitchell</h1>
+                <p class="hero-subtitle">Bestselling Author of Contemporary Fiction</p>
+                <p class="hero-description">Crafting stories that touch the heart and ignite the imagination</p>
+                <div class="hero-buttons">
+                    <a href="#books" class="btn btn-primary">View Books</a>
+                    <a href="#about" class="btn btn-secondary">About Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Books Section -->
+    <section id="books" class="books-section">
+        <div class="container">
+            <h2 class="section-title">Featured Books</h2>
+            <div class="books-grid">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="bhlnz-biodiversity-heritage-library-nz-QO5QTMjYbWk-unsplash.jpg" alt="Whispers in the Wind book cover by Sarah Mitchell" onload="console.log('Image loaded successfully')" onerror="this.src='https://images.unsplash.com/photo-1544716278-ca5e3f4ebf0c'; console.log('Image failed to load, using fallback')">
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Whispers in the Wind</h3>
+                        <p class="book-description">A captivating tale of love, loss, and redemption set against the backdrop of the Scottish Highlands.</p>
+                        <div class="book-price">$16.99</div>
+                        <div class="book-actions">
+                            <a href="https://amazon.com" target="_blank" class="btn btn-primary buy-now-btn">Buy Now - $16.99</a>
+                            <button class="btn btn-secondary" onclick="openSampleModal('whispers')">Read Sample</button>
+                            <div class="purchase-links">
+                                <a href="https://amazon.com" target="_blank" class="purchase-link">
+                                    <i class="fab fa-amazon"></i> Amazon
+                                </a>
+                                <a href="https://barnesandnoble.com" target="_blank" class="purchase-link">
+                                    <i class="fas fa-book"></i> Barnes & Noble
+                                </a>
+                                <a href="https://apple.com/books" target="_blank" class="purchase-link">
+                                    <i class="fab fa-apple"></i> Apple Books
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="oldergent.jpg" alt="Sarah Mitchell - Author Photo">
+                </div>
+                <div class="about-text">
+                    <h2 class="section-title">About Sarah Mitchell</h2>
+                    <p>Sarah Mitchell is a bestselling author of contemporary fiction whose novels have touched millions of readers worldwide. With a passion for storytelling that began in childhood, Sarah has crafted narratives that explore the depths of human emotion and the complexities of modern relationships.</p>
+                    <p>Born and raised in the Pacific Northwest, Sarah draws inspiration from the natural beauty of her surroundings and the rich tapestry of life experiences that have shaped her journey. She holds a Master's degree in Creative Writing from Columbia University and has been writing professionally for over a decade.</p>
+                    <p>Her debut novel, "Whispers in the Wind," became an instant bestseller and established her as a powerful voice in contemporary fiction. Since then, she has published multiple acclaimed novels, each one exploring different facets of love, loss, family, and personal growth.</p>
+                    <p>When she's not writing, Sarah enjoys hiking, photography, and spending time with her family. She currently resides in Seattle with her husband and two children, where she continues to craft stories that resonate with readers around the globe.</p>
+                    <div class="achievements">
+                        <h3>Achievements</h3>
+                        <ul>
+                            <li>New York Times Bestselling Author</li>
+                            <li>Winner of the 2022 Literary Fiction Award</li>
+                            <li>Over 2 million books sold worldwide</li>
+                            <li>Translated into 15 languages</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Gallery</h2>
+            <div class="gallery-grid" id="gallery-grid">
+                <div class="gallery-item" onclick="openLightbox(0)">
+                    <img src="adrian-gaede-nF5xRshqItY-unsplash.jpg" alt="Book Signing Event">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(1)">
+                    <img src="ahmed-slimene-oAil5UHXYRE-unsplash.jpg" alt="Writing Retreat">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(2)">
+                    <img src="dong-xie-K4mCK1W9mEs-unsplash.jpg" alt="Literary Conference">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(3)">
+                    <img src="jonathan-borba-bUXad2FH878-unsplash.jpg" alt="Award Ceremony">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(4)">
+                    <img src="klim-musalimov-s2TJUe3LOuA-unsplash.jpg" alt="Radio Interview">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(5)">
+                    <img src="mitchell-soeharsono-H5SAHtXa7Ao-unsplash.jpg" alt="Book Launch">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quotes Section -->
+    <section id="quotes" class="quotes-section">
+        <div class="container">
+            <h2 class="section-title">Inspirational Quotes</h2>
+            <div class="quote-container">
+                <div class="quote-display">
+                    <blockquote id="quote-text" class="quote-text">
+                        "Every story we tell is a piece of our soul shared with the world."
+                    </blockquote>
+                    <cite id="quote-author" class="quote-author">- Sarah Mitchell</cite>
+                </div>
+                <div class="quote-navigation">
+                    <button class="quote-btn" onclick="previousQuote()">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="quote-btn" onclick="nextQuote()">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Connect with Sarah</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-goodreads"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Stay updated with the latest book releases and events</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sarah Mitchell. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Book Sample Modal -->
+    <div id="sample-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title">Book Sample</h3>
+                <span class="close" onclick="closeSampleModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="sample-content" class="sample-content">
+                    <!-- Sample content will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+            <div class="lightbox-image" id="lightbox-image">
+                <!-- Image will be loaded here -->
+            </div>
+            <div class="lightbox-navigation">
+                <button class="lightbox-btn prev" onclick="previousImage()">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="lightbox-btn next" onclick="nextImage()">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
